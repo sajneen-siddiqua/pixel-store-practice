@@ -7,10 +7,75 @@
     <title>pixel store</title>
     <!-- tailwind & daisy ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <html data-theme="lemonade"></html>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+
 </head>
 <body>
-    
+    <!-- navbar start here -->
+    <div class="navbar bg-slate-700 py-6">
+        <div class="flex-1 ml-12">
+            <i class="fa-brands fa-google" style="font-size:60px;color:whitesmoke;text-shadow:2px 2px 4px #000000;"></i>
+            <!-- <img src="img/google-suite-icon-google-icon-LmAAJV07.jpg" alt=""> -->
+          <a class="btn btn-ghost normal-case text-4xl text-white">Pixel Store</a>
+        </div>
+        <!-- navigation list item start -->
+        <div class="flex-none gap-4">
+          <ul class="flex gap-8">
+           <li>
+            <span><i class="fa-solid fa-house text-yellow-500"></i></span>
+            <span class="text-white font-semi-bold text-xl">Home</span>
+           </li>
+           <li>
+            <span><i class="fa-solid fa-heart  text-yellow-500"></i></span>
+            <span class="text-white font-semi-bold text-xl">WishList</span>
+           </li>
+           <li>
+            <span><i class="fa-solid fa-trash  text-yellow-500"></i></span>
+            <span class="text-white font-semi-bold text-xl" >Recycle Bin</span>
+           </li>
+           <!-- <li>
+            <span><i class="fa-solid fa-cart-shopping  text-white"></i></span>
+            <span class="text-white font-semi-bold text-xl" >Cart</span>
+           </li> -->
+          </ul>
+          <!-- nevigation list item end -->
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost">
+              <!-- <div class="w-10 rounded-full">
+                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div> -->
+              <li>
+                <span><i class="fa-sharp fa-solid fa-cart-shopping  text-yellow-500"style="font-size:30px;" ></i></span>
+                <!-- <span class="">Cart</span> -->
+               </li>
+
+            </label>
+            <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Home
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>WishList</a></li>
+              <li><a>Recycle Bin</a></li>
+              <li><a>Cart</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navigation end here -->
+
+      <!-- new on pixel section -->
+      <section class="mt-12">
+        <div class="text-center" >
+          <h2 class="text-4xl font-bold ">New On Pixel Store</h2>
+        </div>
+      </section>
+
+
 </body>
 </html>
