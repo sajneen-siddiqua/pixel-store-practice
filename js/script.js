@@ -116,4 +116,5 @@ function handleBuyNow(id) {
 
 function handleClear() {
   document.getElementById("cart-items-container").innerHTML = " ";
+  document.getElementById("calculation").innerHTML = " ";
 }
