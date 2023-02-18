@@ -80,13 +80,17 @@ function handleModal(id) {
 }
 let count = 0;
 let newPrice = 0;
+let tax = 0;
+let totalAmount = 0;
 function handleBuyNow(id) {
   count++;
 
   const product = dataset.find((item) => item.id === id);
   const { img, name, price } = product;
-  const newPrice = newPrice + product.price;
-  // console.log(newPrice);
+
+  newPrice = newPrice + product.price;
+  tax = newPrice * 0.1;
+  totalAmount = newPrice + tax;
   const cartContainer = document.getElementById("cart-items-container");
 
   const div = document.createElement("div");
@@ -105,7 +109,9 @@ function handleBuyNow(id) {
               `;
   cartContainer.appendChild(div);
   document.getElementById("product-count").innerText = count;
-  document.getElementById("Price").innerText = newPrice;
+  document.getElementById("Price").innerText = newPrice.toFixed(2);
+  document.getElementById("tax-count").innerText = tax;
+  document.getElementById("total-count").innerText = totalAmount.toFixed(2);
 }
 
 function handleClear() {
